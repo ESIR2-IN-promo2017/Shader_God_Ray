@@ -67,10 +67,10 @@ float occlusionMap(in vec2 uv) {
 }
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
-	vec2 uv = fragCoord.xy / vec2(200);
+	vec2 uv = fragCoord.xy / vec2(700);
     
    // if (iMouse.w < 1.) {
-        occlusionLoc = vec2(sin(.6)*.2+.5,cos(.76)*.2+.5);
+        occlusionLoc = vec2(sin(.2	)*.2+.5,cos(.76)*.2+.5);
     //}
     
     float cl = occlusionMap(uv);
